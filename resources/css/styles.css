@@ -1,0 +1,170 @@
+/* Resetowanie domyślnych ustawień przeglądarki */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ogólne ustawienia strony */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Nagłówek strony */
+h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Przyciski */
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Tabela */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Formularze */
+form {
+    margin-top: 20px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Powiadomienia */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.alert-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Ustawienia dla elementów w tabelach */
+.table th, .table td {
+    text-align: left;
+    padding: 15px;
+}
+
+/* Stylizacja przycisków w tabelach */
+.table .btn {
+    margin-top: 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
+.table .btn-warning {
+    background-color: #ffc107;
+}
+
+.table .btn-danger {
+    background-color: #dc3545;
+}
+
+.table .btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.table .btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Stylizacja linków */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Dostosowanie wyglądu przycisków w nagłówku */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Odwracanie kolorów */
+.invert-colors {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+/* Powiększanie po najechaniu */
+.zoom-on-hover *:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s;
+}

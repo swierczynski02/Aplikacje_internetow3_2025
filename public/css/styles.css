@@ -1,0 +1,190 @@
+/* Resetowanie domyślnych ustawień przeglądarki */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ogólne ustawienia strony */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Nagłówek strony */
+h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Przyciski */
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Tabela */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Formularze */
+form {
+    margin-top: 20px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Powiadomienia */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.alert-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.alert-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Ustawienia dla elementów w tabelach */
+.table th, .table td {
+    text-align: left;
+    padding: 15px;
+}
+
+/* Stylizacja przycisków w tabelach */
+.table .btn {
+    margin-top: 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
+.table .btn-warning {
+    background-color: #ffc107;
+}
+
+.table .btn-danger {
+    background-color: #dc3545;
+}
+
+.table .btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.table .btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Stylizacja linków */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Dostosowanie wyglądu przycisków w nagłówku */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+/* Resetowanie tła dla odwracania kolorów */
+.invert-colors {
+    filter: invert(1) hue-rotate(180deg);
+    background-color: #000; /* Ciemne tło po odwróceniu kolorów */
+}
+
+/* Przyciski opcji dostępności - poprawione ustawienie */
+.accessibility-options {
+    position: fixed; /* Ustawienie przycisków na stałe w widocznym miejscu */
+    top: 20px; /* Odległość od górnej krawędzi */
+    right: 20px; /* Odległość od prawej krawędzi */
+    z-index: 1000; /* Priorytet wyświetlania */
+    display: flex;
+    gap: 10px; /* Odstępy między przyciskami */
+}
+
+.accessibility-options .btn {
+    font-size: 14px; /* Zmniejszenie rozmiaru tekstu dla przycisków */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Dodatkowe poprawki dla widoczności przy odwróconych kolorach */
+.invert-colors .btn {
+    background-color: #fff; /* Białe tło dla przycisków */
+    color: #000; /* Czarny tekst */
+    border: 1px solid #ccc; /* Kontrastująca ramka */
+}
+
+.invert-colors .btn:hover {
+    background-color: #eee; /* Jasne tło po najechaniu */
+}
+
