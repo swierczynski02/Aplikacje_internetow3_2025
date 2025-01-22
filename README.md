@@ -1,21 +1,66 @@
-# Aplikacje_internetowe_2025
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-1Tabela: Użytkownicy (uzytkownicy) id: Unikalny identyfikator użytkownika. nazwa_uzytkownika: Nazwa użytkownika. haslo: Hasło użytkownika (przechowywane w formie zaszyfrowanej). email: Adres e-mail użytkownika. rola: Rola użytkownika (administrator, klient, pracownik). data_utworzenia: Data utworzenia konta. data_aktualizacji: Data ostatniej modyfikacji konta.
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-2Tabela: Filmy (filmy) id: Unikalny identyfikator filmu. tytul: Tytuł filmu. gatunek: Gatunek filmu (np. komedia, dramat, horror). reżyser: Reżyser filmu. rok_produkcji: Rok produkcji. czas_trwania: Czas trwania filmu (w minutach). opis: Krótkie streszczenie fabuły. data_utworzenia: Data dodania filmu do systemu.
+## About Laravel
 
-3Tabela: Projekcje (projekcje) id: Unikalny identyfikator projekcji. film_id: Klucz obcy do tabeli filmy, wskazujący projektowany film. data_czas: Data i godzina rozpoczęcia projekcji. sala: Sala kinowa, w której odbędzie się projekcja. dostępność_miejsc: Liczba dostępnych miejsc na projekcji. data_utworzenia: Data dodania projekcji.
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-4Tabela: Oceny (oceny) id: Unikalny identyfikator oceny. film_id: Klucz obcy do tabeli filmy, wskazujący oceniany film. uzytkownik_id: Klucz obcy do tabeli uzytkownicy, wskazujący użytkownika oceniającego film. ocena: Ocena filmu (np. w skali 1-10). komentarze: Uwagi użytkownika do filmu. data_oceny: Data oceny.
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-5Tabela: Bilety (bilety) id: Unikalny identyfikator biletu. klient_id: Klucz obcy do tabeli uzytkownicy, wskazujący klienta, który zakupił bilet. projekcja_id: Klucz obcy do tabeli projekcje, wskazujący projekcję filmu. rodzaj_biletu: Rodzaj biletu (np. "normalny", "ulgowy"). cena: Cena biletu. data_zakupu: Data zakupu biletu.
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-6Tabela: Zamówienia (zamowienia) id: Unikalny identyfikator zamówienia. klient_id: Klucz obcy do tabeli uzytkownicy, wskazujący klienta. data_zamowienia: Data złożenia zamówienia. cena_calkowita: Całkowita cena zamówienia. status: Status zamówienia (np. "oczekujące", "zrealizowane"). status_platnosci: Status płatności (np. "oczekująca", "zapłacona").
+## Learning Laravel
 
-7Tabela: Szczegóły Zamówienia (szczegoly_zamowienia) id: Unikalny identyfikator szczegółu zamówienia. zamowienie_id: Klucz obcy do tabeli zamowienia. bilet_id: Klucz obcy do tabeli bilety. ilosc: Liczba zakupionych biletów. cena: Cena jednostkowa biletu. cena_calkowita: Całkowita cena za ten szczegół zamówienia.
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-8Tabela: Pracownicy (pracownicy) id: Unikalny identyfikator pracownika. uzytkownik_id: Klucz obcy do tabeli uzytkownicy, wskazujący pracownika. rola: Rola pracownika (np. "rejestracja", "obsługa klienta"). data_zatrudnienia: Data zatrudnienia pracownika.
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-9Tabela: Rezerwacje (rezerwacje) id: Unikalny identyfikator rezerwacji. klient_id: Klucz obcy do tabeli uzytkownicy, wskazujący klienta, który dokonał rezerwacji. projekcja_id: Klucz obcy do tabeli projekcje, wskazujący projekcję filmu, na którą dokonano rezerwacji. numer_miejsca: Numer miejsca, które zostało zarezerwowane (w sali kinowej). data_rezerwacji: Data i godzina dokonania rezerwacji. status: Status rezerwacji (np. "oczekująca", "potwierdzona", "odwołana"). data_waznosci: Data i godzina, do kiedy rezerwacja jest ważna (czyli do kiedy klient może opłacić rezerwację lub zrealizować ją). data_utworzenia: Data dodania rezerwacji do systemu.
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-Polecenia: php artisan db:seed php artisan migrate php artisan serve
+## Laravel Sponsors
+
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+
+### Premium Partners
+
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[WebReinvent](https://webreinvent.com/)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Jump24](https://jump24.co.uk)**
+- **[Redberry](https://redberry.international/laravel/)**
+- **[Active Logic](https://activelogic.com)**
+- **[byte5](https://byte5.de)**
+- **[OP.GG](https://op.gg)**
+
+## Contributing
+
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+
+## Code of Conduct
+
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
